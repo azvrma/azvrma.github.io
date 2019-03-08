@@ -1,3 +1,25 @@
-.body{
-    padding:30px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    font-size:16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+.header{
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(241, 90, 153, 0.8), 
+        rgba(229, 112, 252, 0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
 }
