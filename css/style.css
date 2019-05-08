@@ -6,22 +6,53 @@
 
 
 body{
-    font-family: "Lato", sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-weight:400;
     font-size:16px;
     line-height: 1.7;
     color: #777;
     padding: 30px;
 }
+#particles-js {
+    
+    width: 100%;
+    height: 100%;
+    
+  }
 .header{
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(241, 90, 153, 0.8), 
-        rgba(229, 112, 252, 0.8)),
+        rgba(90, 118, 241, 0.8), 
+        rgba(112, 196, 252, 0.8)),
         url(../img/hero.jpg);
     background-size: cover;
     background-position: bottom;
     box-shadow: 0px 0px 29px -5px rgba(148,148,148,1);
     border-radius: 10px;
+}
+nav{
+    float:right;
+    margin:20px 20px;
+}
+
+li{
+    display:inline-block;
+    margin: 0px 15px;
+    color: #fff;
+}
+li.cv{
+    margin:0px;
+    background: #777;
+    background-color: #fff;
+    border-radius:50px;
+    padding: 5px 30px;
+    color:rgba(90, 118, 241);
+}
+b.logo{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    margin: 60px 30px;
+    padding-top: 22px;
 }
