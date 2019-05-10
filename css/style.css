@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+@media(max-width:700px){
+    *{
+        font-size: 0.9em;
+    }
+}
 body{
     font-family: "Google Sans", sans-serif;
     font-weight:400;
@@ -39,11 +44,12 @@ li{
     margin: 0px 12px;
 }
 
-b.logo{
+a.logo{
     font-size: 50px;
     color: #fff;
     font-weight: 300;
     margin: 0px 30px;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
