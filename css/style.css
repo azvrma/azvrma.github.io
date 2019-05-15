@@ -24,7 +24,7 @@ body{
         rgba(90, 118, 241, 0.8), 
         rgba(112, 196, 252, 0.8)),
         url(../img/hero.jpg);
-    background-size: cover;
+    
     background-position: center;
     box-shadow: 0px 0px 29px -5px rgba(148,148,148,1);
     border-radius: 10px;
