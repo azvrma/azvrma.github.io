@@ -3,11 +3,7 @@
     margin: 0;
     padding: 0;
 }
-@media(max-width:700px){
-    *{
-        font-size: 0.9em;
-    }
-}
+
 body{
     font-family: "Google Sans", sans-serif;
     font-weight:400;
@@ -15,6 +11,10 @@ body{
     line-height: 1.7;
     color: #777;
     padding: 30px;
+}
+.heroes{
+    text-align: center;
+    width: 100%;
 }
 .header{
     height:100vh;
@@ -25,7 +25,7 @@ body{
         rgba(112, 196, 252, 0.8)),
         url(../img/hero.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     box-shadow: 0px 0px 29px -5px rgba(148,148,148,1);
     border-radius: 10px;
 }
@@ -34,6 +34,7 @@ body{
     nav{
         visibility: hidden;
     }
+    
 }
 nav{
     float:right;
@@ -51,9 +52,15 @@ a.logo{
     margin: 0px 30px;
     text-decoration: none;
 }
-a{
+
+nav a{
     text-decoration: none;
     color:#fff;
+}
+nav a:hover{
+    padding-top:2px;
+    text-decoration: none;
+    color: #fff;
 }
 a.cv{
     color:royalblue;
@@ -63,14 +70,19 @@ a.cv{
     margin-right:0px;
     display: block;
 }
-.avatar{
-    margin-top:100px;
-    align-content: center;
-    text-align: center;
-    color: #fff;
+a.cv:hover{
+    color:white;
+    background-color: rgba(90, 118, 241, 0.2);
+    border-radius:50px;
+    padding: 5px 28px;
+    margin-right:0px;
+    display: block;
+    border:2px solid white;
 }
+
 .pic{
     width: 150px;
+    height: auto;
     border-radius:50%;
     border: 10px solid rgba(255,255,255,0.8);
     box-shadow: 0px 0px 29px -5px rgb(247, 247, 247);
@@ -78,16 +90,17 @@ a.cv{
 h1.name{
     font-weight: 600;
     letter-spacing: 0px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
 }
 h3{
     font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 h3.child{
     text-transform: none;
-    letter-spacing: 1px;
 }
 .link{
     padding: 10px 30px;
@@ -96,9 +109,17 @@ h3.child{
     text-decoration: none;
     border-radius: 50px;
 }
+.link:hover{
+    padding: 8px 28px;
+    background: rgba(90, 118, 241, 0.2);
+    color:white;
+    text-decoration: none;
+    border-radius: 50px;
+    border:2px solid white;
+}
 h2{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .card-container h2::before{
     content:"| ";
@@ -114,41 +135,37 @@ h2{
     margin: 60px 5%;
     box-shadow: 0px 0px 29px -5px rgba(148,148,148,1);
     border-radius: 10px;
-    height: 275px;
+}
+.tile1{
+    padding: 10px;
 }
 
 .card-container{
-    width: 50%;
     float: left;
-    height:95%;
     color: rgb(65, 65, 65);
     padding: 15px 20px;
 }
 .container2{
     background: linear-gradient(to right bottom, rgba(241, 90, 90, 0.8), 
     rgba(252, 180, 112, 0.8));
-    height: 100%;
     border-radius: 10px;
     color:#fff;
+    width: 100%;
 }
 .container4{
-    width: 40%;
+    width: 100%;
     background: linear-gradient(to right bottom, rgba(50, 170, 66, 0.8), 
     rgba(144, 214, 86, 0.8));
-    height: 100%;
     border-radius: 10px;
     color:#fff;
     text-align: center;
-    display:block;
 }
-.card3{
-width: 60%;
-}
+
 .container4 h2::before{
     content:"| ";
     color:rgb(250, 252, 112);
 }
-.card3 h2::before{
+.card3 h4::before{
     content:"| ";
     color:rgb(88, 190, 111);
 }
@@ -157,33 +174,35 @@ tr td{
     color: #fff;
 }
 td.label1{
-    font-weight: 600;
-    padding-left:0px;
+    font-weight: 500;
+    padding-right:20px;
+    padding-left: 0px;
     text-transform: uppercase;
 }
  .skill{
     margin-top:10px;
-    height: 200px;
+    padding: 10px;
 }
 .education{
     margin-top:10px;
-    height: 180px;
 }
+
 .heading2{
     text-align: center;
     color: rgb(54, 54, 54);
 }
 
-.progress-bar{
+.progress-bar {
     width: 100%;
     height: 7px;
     border-radius: 50px;
-    background: rgb(204, 204, 204);
+    background-color: #777;
     color: #fff;
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
 }
+
 .progress-html{
     background: linear-gradient(to left,rgb(172,102,192), rgb(135, 32, 163));
     width: 65%;
@@ -214,7 +233,7 @@ td.label1{
 }
 .progress-value{
     float: right;
-    font-size: 18px;
+    font-size: 17px;
 }
 .progress-badge{
     float: left;

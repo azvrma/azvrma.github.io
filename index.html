@@ -2,6 +2,7 @@
     <head>
             <link href="css/style.css" rel="stylesheet">
             <link href='https://fonts.googleapis.com/css?family=Google Sans' rel='stylesheet'>
+            <link href="css/bootstrap.min.css" rel="stylesheet">
             
         <title>Portfolio: Anuj Verma</title>
         
@@ -14,23 +15,29 @@
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#contact" class="cv">Contact me</a></li>
+                    <li><a href="#contact" class="cv">Hire me</a></li>
                 </ul>
             </nav>
-            <div class="avatar"> 
-                <img src="img/avatar.jpg" class="pic"><br/>
-                <h1 class="name">ANUJ VERMA</h1>
-                <h3>Front End Developer/Designer</h3><br>
-                <a class="link" href="#">Contact me</a>
+            <div class="row heroes">
+                <div class="col-12">
+                    <img src="img/avatar.jpg" class="pic"><br>
+                    <h1 class="name">ANUJ VERMA</h1>
+                    <h3 class="child" style="color: white;">Front End Developer | Designer | Learner</h3><br>
+                    <a class="link" href="#">Hire me</a>
+                </div>
             </div>
         </header>
         <div id="about" class="section">
+            <div class="row">
+                <div class="col-md-6">
             <div class="card-container">
                 <h2>About</h2>
                 <p>Hello! I am Anuj Verma, Front End Developer / Designer.</p><br>
                 <h2>Objective</h2>
                 <p>To achieve high career growth through a continuous learning process and keep myself dynamic.</p>
             </div>
+                </div>
+                <div class="col-md-6">
             <div class="card-container container2">
                     <h2>Basic Information</h2>
                     <table>
@@ -43,70 +50,98 @@
                     </table>
             </div>
         </div>
+            </div>
+        </div>
         
-        <h2 class="heading2">Professional Skills</h2>
-        <div id="skills" class="section skill">
-            <div class="card-container">
+        <h2 class="heading2" id="skills">Professional Skills</h2>
+        <div  class="section skill">
+            <div class="row tile1">
+                <div class="col-md-6 card-container">
                 <span class="progress-badge">HTML</span>
                 <span class="progress-value">65%</span><br>
-                    <div class="progress-bar">
+                    <div class="progress-bar grey">
                         <div class="progress-html"></div>
-                    </div><br><br>
+                    </div>
+                </div>
+                <div class="col-md-6 card-container">
                 <span class="progress-badge">Bootstrap</span>
                 <span class="progress-value">30%</span><br>
-                    <div class="progress-bar">
+                    <div class="progress-bar grey">
                         <div class="progress-bs"></div>
                     </div>
-            </div>
-            <div class="card-container">
+                </div>
+            
+                <div class="col-md-6 card-container">
                 <span class="progress-badge">CSS</span>
                 <span class="progress-value">55%</span><br>
-                    <div class="progress-bar">
+                    <div class="progress-bar grey">
                         <div class="progress-css"></div>
-                    </div><br><br>
+                    </div>
+                </div>
+                <div class="col-md-6 card-container">
                 <span class="progress-badge">JavaScript</span>
                 <span class="progress-value">10%</span><br>
-                    <div class="progress-bar">
+                    <div class="progress-bar grey">
                         <div class="progress-js"></div>
                     </div>
                 </div>
+            </div>
         </div>
         
-        <h2 class="heading2">Education</h2>
-        <div id="education" class="section education">
-            <div class="card-container container4">
-                <br>
-                <h3>2014-2018</h3>    
-                <h2>Graduation</h2>
-            </div>
-            <div class="card-container card3">
-                
-                <h2>B.Tech (Information Technology)</h2>
-                <h3 class="child">Dr. A.P.J. Abdul Kalam Technical University</h3><br>
-                <h2>marks obtained: 73.44%</h2>
-            </div>
-        </div>
-        <div class="section education">
-                <div class="card-container container4"><br>
-                        <h3>2013-2014</h3>    
-                        <h2>higher secondary<br>(12th)</h2>
+        <h2 class="heading2" id="education">Education</h2>
+        <div  class="section education">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card-container container4">
+                    <br>
+                    <h3>2014-2018</h3>    
+                    <h2>Graduation</h2><br>
                     </div>
+                </div>
+                <div class="col-md-7">
                     <div class="card-container card3">
-                        <h2>Maths & Science</h2>
-                        <h3 class="child">Kendriya Vidyalaya, Unnao</h3><br>
-                        <h2>marks obtained: 69.4%</h2>
+                    <h4>B.Tech (Information Technology)</h4>
+                    <p>Dr. A.P.J. Abdul Kalam Technical University</p><br>
+                    <h4>Marks Obtained: 73.44%</h4>
                     </div>
+                </div>
+            </div>
         </div>
-        <div class="section education">
-                <div class="card-container container4"><br>
+        <div  class="section education">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card-container container4">
+                    <br>
+                    <h3>2013-2014</h3>    
+                    <h2>Higher Secondary</h2><br>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-container card3">
+                    <h4>Science and Maths</h4>
+                    <p>Kendriya Vidyala, Unnao</p><br>
+                    <h4>Marks Obtained: 69.4%</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="section education">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card-container container4">
+                        <br>
                         <h3>2011-2012</h3>    
-                        <h2>Senior secondary<br>(10th)</h2>
+                        <h2>Senior Secondary</h2><br>
+                        </div>
                     </div>
-                    <div class="card-container card3">
-                        <h2>High School (10th)</h2>
-                        <h3 class="child">Kendriya Vidyalaya, Unnao</h3><br>
-                        <h2>C.G.P.A: 8.2</h2>
+                    <div class="col-md-7">
+                        <div class="card-container card3">
+                        <h4>High School (10th)</h4>
+                        <p>Kendriya Vidyala, Unnao</p><br>
+                        <h4>CGPA: 8.2</h4>
+                        </div>
                     </div>
-        </div>
+                </div>
+            </div>
     </body>  
 </html>
