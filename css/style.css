@@ -15,9 +15,10 @@ body{
 .heroes{
     text-align: center;
     width: 100%;
+    padding-left: 30px;
 }
 .header{
-    height:100vh;
+    height:550px;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
@@ -27,7 +28,7 @@ body{
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 29px -5px rgba(148,148,148,1);
-  border-radius:10px;
+    border-radius: 10px;
 }
 
 @media(max-width:600px){
@@ -35,14 +36,14 @@ body{
         visibility: hidden;
     }
     body{
-        padding:0px;
-
+        padding:0;
+        font-size: 50px;
     }
     h3{
         font-size:0.9rem;
     }
     .header{
-    border-radius:0px;
+        border-radius: 0;
     }
     
 }
@@ -266,4 +267,106 @@ td.label1{
 content:"| ";
 font-weight: 900;
 color:rgb(135, 32, 163);
+}
+
+.cc-contact-info{
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    background: linear-gradient(to right bottom, rgba(241, 90, 90, 0.8), 
+    rgba(252, 180, 112, 0.8));
+}
+.cc-contact{
+    padding: 8% 10%;
+}
+@media (max-width: 767px) {
+    .cc-contact-information .cc-contact {
+      padding: 30px 0px 30px 0px;
+    }
+    
+  }
+.card{
+    background: #fff;
+    box-shadow: 0px 0px 29px -5px rgba(148,148,148,0.9);
+    border-radius: 10px; 
+    margin:auto;
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.input-icons i { 
+    position: absolute;
+    opacity: 0.5;
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin: 10px 10px 25px 0px; 
+} 
+  
+.icon { 
+    padding: 10px;
+    padding-left: 15px;
+    min-width: 40px;
+}
+.form-control.field-round{
+    border-radius: 50px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+.form-control.field-round:focus{
+    border: 1px solid rgba(241, 90, 90, 0.8);
+    outline-style:none;
+    box-shadow: none;
+}
+
+.form-control.field-round:hover{
+    box-shadow:0px 0px 5px -1px rgb(252, 180, 112);
+}
+.form-control.field-round::placeholder{
+    opacity: 0.5;
+}
+
+.form-control.area:focus{
+    border-bottom: 1px solid rgba(241, 90, 90, 0.8);
+    border-top: none;
+    border-right: none;
+    border-left:none;
+    outline-style:none;
+    box-shadow: none;
+}
+.form-control.area{
+    border-top: none;
+    border-right: none;
+    border-left:none;
+}
+
+.form-control.area:hover{
+    box-shadow:0px 0px 5px -1px rgb(252, 180, 112);
+}
+.form-control.area::placeholder{
+    opacity: 0.5;
+}
+
+.btn-danger.send{
+    border-radius: 50px;
+    background: linear-gradient(to right bottom, rgba(241, 90, 90, 0.9), 
+    rgba(252, 180, 112, 0.9));
+    border:0px;
+    box-shadow:0px 3px 7px 0px rgba(252, 180, 112, 0.8);
+    padding: 8px 25px;
+}
+
+.btn-danger.send:hover{
+    background: linear-gradient(to left top, rgba(241, 90, 90, 0.9), 
+    rgba(252, 180, 112, 0.9));
+    border:0px;
+    box-shadow:0px 3px 10px 0px rgba(241, 90, 90, 0.8);
+}
+
+.red{
+    color:rgba(241, 90, 90, 0.8);
 }
