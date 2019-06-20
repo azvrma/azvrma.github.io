@@ -134,6 +134,9 @@ h2{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+h2.child{
+    text-transform: none;
+}
 .card-container h3::before{
     content:"| ";
     color:rgb(241, 90, 90);
@@ -369,4 +372,64 @@ color:rgb(135, 32, 163);
 
 .red{
     color:rgba(241, 90, 90, 0.8);
+}
+
+.fa-heart{
+    color: rgb(241, 90, 90);
+}
+
+.fa-facebook{
+    color: rgb(59,89,152);
+    padding: 8px 14.5px;
+    border:1px solid rgb(59,89,152);
+    border-radius: 50px;
+}
+
+.fa-facebook:hover{
+    color: #fff;
+    background: rgb(59,89,152);
+    border-radius: 50px;
+    padding: 8px 14.5px;
+}
+
+.fa-github{
+    color: rgb(26, 26, 26);
+    padding: 8px 10px;
+    border:1px solid rgb(26, 26, 26);
+    border-radius: 50px;
+}
+
+.fa-github:hover{
+    color: #fff;
+    background: rgb(26, 26, 26);
+    border-radius: 50px;
+    padding: 8px 10px;
+}
+
+.fa-twitter{
+    color: rgb(29,161,242);
+    padding: 8px 9px;
+    border:1px solid rgb(29,161,242);
+    border-radius: 50px;
+}
+
+.fa-twitter:hover{
+    color: #fff;
+    background: rgb(29,161,242);
+    border-radius: 50px;
+    padding: 8px 9px;
+}
+
+.fa-telegram{
+    color: rgb(0, 136, 204);
+    padding: 8px 8px;
+    border:1px solid rgb(0, 136, 204);
+    border-radius: 50px;
+}
+
+.fa-telegram:hover{
+    color: #fff;
+    background: rgb(0, 136, 204);
+    border-radius: 50px;
+    padding: 8px 8px;
 }
