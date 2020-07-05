@@ -231,21 +231,21 @@ td.label1{
 
 .progress-html{
     background: linear-gradient(to left,rgb(172,102,192), rgb(135, 32, 163));
-    width: 65%;
+    width: 70%;
     height: 7px;
     z-index:3;
     border-radius: 50px;
 }
 .progress-css{
     background: linear-gradient(to left,rgb(172,102,192), rgb(135, 32, 163));
-    width: 55%;
+    width: 60%;
     height: 7px;
     z-index:3;
     border-radius: 50px;
 }
 .progress-bs{
     background: linear-gradient(to left,rgb(172,102,192), rgb(135, 32, 163));
-    width: 30%;
+    width: 50%;
     height: 7px;
     z-index:3;
     border-radius: 50px;
@@ -432,4 +432,18 @@ color:rgb(135, 32, 163);
     background: rgb(0, 136, 204);
     border-radius: 50px;
     padding: 8px 8px;
+}
+
+.fa-linkedin{
+    color: rgb(0, 115, 177);
+    padding: 8px 10px;
+    border:1px solid rgb(0, 115, 177);
+    border-radius: 50px;
+}
+
+.fa-linkedin:hover{
+    color: #fff;
+    background: rgb(0, 115, 177);
+    border-radius: 50px;
+    padding: 8px 10px;
 }
