@@ -2563,7 +2563,7 @@ img {
         -ms-flex-align: center;
         align-items: center;
         transform: translateZ(0);
-        transition: all .5s cubic-bezier(.685, .0473, .346, 1)
+        transition: all .5s cubic-bezier(.685, .0473, .346, 1);
     }
 
     .navbar .navbar-toggler-bar {
