@@ -10,6 +10,7 @@
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="./css/now-ui-kit.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio: Anuj Verma</title>
 
 </head>
@@ -21,7 +22,7 @@
         <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="1">
 
             <div class="container">
-            
+
                 <div class="navbar-translate">
                     <a class="navbar-brand" href="#"> AV </a>
 
@@ -37,25 +38,29 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a href="#about" class="nav-link text-center" >
+                            <a class="nav-link text-center"
+                                onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
                                 About me
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link text-center" >
+                            <a class="nav-link text-center"
+                                onclick="document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' });">
                                 Skills
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#education" class="nav-link text-center" >
+                            <a class="nav-link text-center"
+                                onclick="document.querySelector('#education').scrollIntoView({ behavior: 'smooth' });">
                                 Education
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="text-center nav-link" href="#contact">
+                            <a class="text-center nav-link"
+                                onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
                                 Hire me
                             </a>
                         </li>
@@ -68,22 +73,25 @@
 
         <div class="row heroes">
             <div class="col-12 mt-5 pt-4">
-                <img src="img/avatar.jpg" class="pic mt-5"><br>
-                <h2 class="name my-3" style="color: white;"> <strong>ANUJ VERMA</strong> </h2>
-                <h5 class="child my-2" style="color: white;">Front End Developer | Designer | Learner</h5><br>
-                <a class="link mt-5" href="#contact">Hire me</a>
+                <img src="img/avatar.jpg" class="pic mt-5" data-aos="fade-down" data-aos-duration="2000"><br>
+                <h2 class="name my-3" style="color: white;" data-aos="fade-up" data-aos-duration="3000"> <strong>ANUJ
+                        VERMA</strong> </h2>
+                <h5 class="child my-2" style="color: white;" data-aos="fade-up" data-aos-duration="3000">Front End
+                    Developer | Designer | Learner</h5><br>
+                <a class="link mt-5" data-aos="fade-up" data-aos-duration="5000"
+                    onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">Hire me</a>
             </div>
         </div>
     </header>
-    <div id="about" class="section">
+    <div id="about" class="section" data-aos="fade-up" data-aos-duration="1200">
         <div class="row">
             <div class="col-md-6">
                 <div class="card-container">
                     <h3>About</h3>
                     <p>Hello! I am Anuj Verma, Front End Developer / Designer.</p><br>
-                    <h3>Objective</h2>
-                        <p>To achieve high career growth through a continuous learning process and keep myself dynamic.
-                        </p>
+                    <h3>Objective</h3>
+                    <p>To achieve high career growth through a continuous learning process and keep myself dynamic.
+                    </p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -119,13 +127,13 @@
     </div>
 
     <h2 class="heading2" id="skills">Professional Skills</h2>
-    <div class="section skill">
+    <div class="section skill" data-aos="fade-up" data-aos-duration="1200">
         <div class="row tile1">
             <div class="col-md-6 card-container">
                 <span class="progress-badge">HTML</span>
                 <span class="progress-value">70%</span><br>
                 <div class="progress-bar grey">
-                    <div class="progress-html"></div>
+                    <div class="progress-html" style="width: 70%;"></div>
                 </div>
             </div>
             <div class="col-md-6 card-container">
@@ -154,7 +162,7 @@
     </div>
 
     <h2 class="heading2" id="education">Education</h2>
-    <div class="section education">
+    <div class="section education" data-aos="fade-up" data-aos-duration="1200">
         <div class="row">
             <div class="col-md-5">
                 <div class="card-container container4">
@@ -172,7 +180,7 @@
             </div>
         </div>
     </div>
-    <div class="section education">
+    <div class="section education" data-aos="fade-up" data-aos-duration="1200">
         <div class="row">
             <div class="col-md-5">
                 <div class="card-container container4">
@@ -190,7 +198,7 @@
             </div>
         </div>
     </div>
-    <div class="section education">
+    <div class="section education" data-aos="fade-up" data-aos-duration="1200">
         <div class="row">
             <div class="col-md-5">
                 <div class="card-container container4">
@@ -208,9 +216,9 @@
             </div>
         </div>
     </div>
-    <div class="cc-contact-info mb-5">
+    <div id="contact" class="cc-contact-info mb-5" data-aos="fade-up" data-aos-duration="1200">
         <div class="container">
-            <div id="contact" class="cc-contact">
+            <div class="cc-contact">
                 <div class="row ">
                     <div class="col-md-9 card">
                         <h4 class="text-center title mb-5">Contact Me</h4>
@@ -282,23 +290,44 @@
     </div>
     <footer class="footer">
         <div class="container text-center">
-            <a class="btn btnBot btn-link" href="https://fb.com/azvrma"><i class="fa fa-facebook fa-2x"></i></a>
-            <a class="btn btnBot btn-link" href="https://github.com/azvrma"><i class="fa fa-github fa-2x"></i></a>
-            <a class="btn btnBot btn-link" href="https://twitter.com/azvrma"><i class="fa fa-twitter fa-2x"></i></a>
-            <a class="btn btnBot btn-link" href="https://t.me/azvrma"><i class="fa fa-telegram fa-2x"></i></a>
-            <a class="btn btnBot btn-link" href="https://www.linkedin.com/in/anuj-kumar-3a4549136/"><i
-                    class="fa fa-linkedin fa-2x"></i></a>
+            <a class="btn btnBot btn-link" href="https://fb.com/azvrma" data-aos="zoom-out-up"
+                data-aos-duration="2500"><i class="fa fa-facebook fa-2x"></i></a>
+            <a class="btn btnBot btn-link" href="https://github.com/azvrma" data-aos="zoom-out-down"
+                data-aos-duration="2500"><i class="fa fa-github fa-2x"></i></a>
+            <a class="btn btnBot btn-link" href="https://twitter.com/azvrma" data-aos="zoom-out-up"
+                data-aos-duration="2500"><i class="fa fa-twitter fa-2x"></i></a>
+            <a class="btn btnBot btn-link" href="https://t.me/azvrma" data-aos="zoom-out-down"
+                data-aos-duration="2500"><i class="fa fa-telegram fa-2x"></i></a>
+            <a class="btn btnBot btn-link" href="https://www.linkedin.com/in/anuj-kumar-3a4549136/"
+                data-aos="zoom-out-up" data-aos-duration="2500"><i class="fa fa-linkedin fa-2x"></i></a>
         </div>
         <div class="h3 title text-center">Anuj Verma</div>
         <div class="text-muted text-center my-3">&copy; 2020 Designed with <i class="fa fa-heart"></i> by Anuj Verma.
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <a class="mr-m2b back-to-top btn btn-light btn-lg"
+        onclick="document.querySelector('body').scrollIntoView({ behavior: 'smooth' });" role="button"
+        color-on-scroll="50" data-aos="fade-up" data-aos-duration="500"> <i class="fa fa-chevron-up"></i> </a>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/now-ui-kit@1.3.0/assets/js/plugins/nouislider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/now-ui-kit@1.3.0/assets/js/now-ui-kit.min.js"></script>
+
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
+
+    <script>
+        window.addEventListener('load', AOS.refresh)
+    </script>
 </body>
 
 </html>
