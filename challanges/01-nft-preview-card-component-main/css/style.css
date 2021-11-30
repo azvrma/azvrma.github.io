@@ -6,7 +6,7 @@
 
 body{
     font-family: "Outfit";
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -41,6 +41,8 @@ body{
     border-radius: 15px;
     flex-direction: column;
     position: absolute;
+    box-shadow: 0px 20px 0px 15px rgba(0, 0, 0, 0.1),
+                0px 20px 0px 40px rgba(0, 0, 0, 0.05);
 }
 
 .card .equilibrium{
@@ -61,7 +63,7 @@ body{
 }
 
 .title{
-    font-weight: 600;
+    font-weight: 500;
     color: var(--white);
     font-size: 18px;
     margin-bottom: 15px;
@@ -70,7 +72,7 @@ body{
 .description{
     font-size: 16px;
     color: var(--soft-blue);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .info {
@@ -87,7 +89,7 @@ body{
 }
 
 .price{
-    font-weight: 600;
+    font-weight: 500;
     color: var(--cyan);
     align-items: center;
     display: flex;
@@ -131,4 +133,9 @@ body{
     display: flex;
     align-items: center;
     margin-left: 5px;
+}
+
+.title:hover, .name:hover{
+    color: var(--cyan);
+    cursor: pointer;
 }
