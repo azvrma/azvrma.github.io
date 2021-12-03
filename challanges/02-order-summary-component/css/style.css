@@ -51,11 +51,11 @@ body{
 }
 
 .card{
-    height: 500px;
-    width: 300px;
-    background-color: var(--very-pale-blue);
+    height: 550px;
+    width: 350px;
+    background-color: #fff;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -67,19 +67,19 @@ body{
 .card-image img{
     width: 100%;
     box-sizing: border-box;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 .card-summary{
-    padding: 30px;
+    padding: 35px;
 }
 
 h1.title{
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1.4em;
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: var(--dark-bluedark-blue);
 }
 
@@ -89,6 +89,7 @@ h1.title{
     font-size: 0.8em;
     margin-bottom: 20px;
     color: var(--desaturated-blue);
+    line-height: 1.5;
 }
 
 .pricing{
@@ -96,17 +97,19 @@ h1.title{
     box-sizing: border-box;
     width: 100%;
     padding: 20px;
-    border-radius: 10px;
-    background-color: hsl(225, 100%, 97%);
+    border-radius: 8px;
+    background-color: var(--very-pale-blue);
     flex-direction: row;
     align-items: center;
-    font-size: 12px;
-    margin-bottom: 20px;
+    font-size: 0.85em;
+    margin-bottom: 25px;
 }
+
 .music-icon{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
+
 .price{
     display: flex;
     flex: 1;
@@ -114,17 +117,22 @@ h1.title{
     justify-content: space-between;
     box-sizing: border-box;
     color: var(--desaturated-blue);
-    padding-left: 10px;
+    margin-left: 15px;
+    margin-top:0px;
+    padding: 0;
 }
+
 .price-item{
     color: var(--dark-blue);
     font-weight: 900;
-    font-size: 0.98em;
-    margin-bottom: 5px;
+    font-size: 0.95em;
+    margin-top:-2px;
+    margin-bottom: 4px;
+    padding: 0;
 }
 .button-change{
-    font-size: 0.9em;
-    font-weight: 700;
+    font-size: 0.8em;
+    font-weight: 900;
     box-sizing: border-box;
     display: flex;
     flex: 1;
@@ -135,7 +143,7 @@ h1.title{
 
 .payment-button{
     font-weight: 700;
-    font-size: 0.65em;
+    font-size: 0.75em;
     color: var(--very-pale-blue);
     background: var(--bright-blue);
     box-sizing: border-box;
@@ -149,14 +157,14 @@ h1.title{
 
 .cancel-order{
     margin-top: 20px;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
     width: 100%;
-    background: var(--very-pale-blue);
+    background: #fff;
     border: none;
     font-family: Red Hat Display;
     color: var(--desaturated-blue);
