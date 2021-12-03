@@ -49,7 +49,115 @@ body{
     align-items: center;
     justify-content: center;
 }
-/* 
-.card{
 
-} */
+.card{
+    height: 500px;
+    width: 300px;
+    background-color: var(--very-pale-blue);
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card-image{
+    width: 100%;
+    box-sizing: border-box;
+}
+.card-image img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+}
+.card-summary{
+    padding: 30px;
+}
+
+h1.title{
+    font-weight: 900;
+    font-size: 1.3em;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+    color: var(--dark-bluedark-blue);
+}
+
+.description{
+    display: flex;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: var(--desaturated-blue);
+}
+
+.pricing{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 97%);
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.music-icon{
+    height: 35px;
+    width: 35px;
+}
+.price{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: var(--desaturated-blue);
+    padding-left: 10px;
+}
+.price-item{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 0.98em;
+    margin-bottom: 5px;
+}
+.button-change{
+    font-size: 0.9em;
+    font-weight: 700;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+.payment-button{
+    font-weight: 700;
+    font-size: 0.65em;
+    color: var(--very-pale-blue);
+    background: var(--bright-blue);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 15px 15px 0px hsla(245, 75%, 52%, 0.2);
+    font-family: Red Hat Display;
+}
+
+.cancel-order{
+    margin-top: 20px;
+    font-size: 0.7em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    background: var(--very-pale-blue);
+    border: none;
+    font-family: Red Hat Display;
+    color: var(--desaturated-blue);
+}
