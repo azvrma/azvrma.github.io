@@ -8,9 +8,6 @@ body{
     font-family: "Red Hat Display";
     font-weight: 500;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background: var(--pale-blue);
 }
@@ -29,3 +26,30 @@ body{
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
 }
+
+.wave{
+    height: 80vh;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.wave-path{
+    stroke: none;
+    fill: hsl(225, 100%, 91%);
+    ;
+}
+
+.content{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.card{
+
+} */
