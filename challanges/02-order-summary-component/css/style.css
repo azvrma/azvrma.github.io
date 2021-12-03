@@ -34,10 +34,18 @@ body{
     position: absolute;
     z-index: 1;
 }
-.wave-path{
-    stroke: none;
-    fill: hsl(225, 100%, 91%);
-    ;
+
+/* Media Queries */
+@media (max-width:375px ){
+    .wave-full{
+        display:none;
+    }
+}
+
+@media (min-width:375px){
+    .wave-mobile{
+        display:none;
+    }
 }
 
 .content{
