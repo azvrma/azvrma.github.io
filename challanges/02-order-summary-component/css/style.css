@@ -88,7 +88,7 @@ h1.title{
     text-align: center;
     display: flex;
     margin-bottom: 15px;
-    color: var(--dark-bluedark-blue);
+    color: var(--dark-blue);
 }
 
 .description{
@@ -138,6 +138,7 @@ h1.title{
     margin-bottom: 4px;
     padding: 0;
 }
+
 .button-change{
     font-size: 0.8em;
     font-weight: 900;
@@ -147,6 +148,13 @@ h1.title{
     justify-content: end;
     text-decoration: underline;
     color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.button-change:hover{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    cursor: pointer;
 }
 
 .payment-button{
@@ -161,6 +169,13 @@ h1.title{
     border: none;
     box-shadow: 0px 15px 15px 0px hsla(245, 75%, 52%, 0.2);
     font-family: Red Hat Display;
+    cursor: pointer;
+}
+
+.payment-button:hover{
+    background-color: var(--desaturated-blue);
+    box-shadow: 0px 15px 15px 0px hsla(224, 23%, 55%, 0.2);
+    cursor: pointer;
 }
 
 .cancel-order{
@@ -176,4 +191,10 @@ h1.title{
     border: none;
     font-family: Red Hat Display;
     color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.cancel-order:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
 }
