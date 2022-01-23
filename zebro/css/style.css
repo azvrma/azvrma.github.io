@@ -12,6 +12,7 @@ body{
     line-height: 1.7;
     color: #777;
     padding: 30px;
+    overflow-x:hidden;
 }
 .heroes{
     text-align: center;
@@ -131,6 +132,9 @@ a{
     }
 }
 @media(max-width:991px){
+    body{
+        overflow-x: hidden;
+    }
     .nav-item{
         width: 90%;
     }
