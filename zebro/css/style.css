@@ -579,3 +579,8 @@ p.h1 > span{
     font-weight: 900 !important;
 }
 
+p{
+    position: relative;
+    z-index: 2000;
+}
+
