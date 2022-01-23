@@ -119,6 +119,9 @@ a{
     .nav-link:hover::before {
         visibility: hidden;
     }
+    .container2{
+        margin-top:15px !important;
+    }
 }
 
 @media(max-width:835px){
@@ -258,7 +261,7 @@ h2.child{
 }
 
 .img-top-zeb{
-    border-radius: 150px 20px 150px 20px;
+    border-radius: 20px 150px 20px 150px;
     overflow: hidden;
     filter: grayscale(100%);
 }
