@@ -218,7 +218,7 @@ h2.child{
     color:#fff;
     width: max-content;
     z-index: index 1;
-    border-radius: 150px 20px 150px 20px;
+    border-radius: 20px 150px 20px 150px;
     animation-name: backgroundColorPalette;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
@@ -395,8 +395,6 @@ color:rgb(135, 32, 163);
     margin-bottom: 25px;
 }
 
-
-
 .input-icons i { 
     position: absolute;
     opacity: 0.5;
@@ -563,7 +561,7 @@ padding: 0px 5px;
 }
 
 .btn-intro{
-    background-color: rgb(109, 214, 134);
+    background-color: rgb(101, 185, 121);
     padding: 2px 15px;
     border-radius: 10px 5px 10px 5px;
     color:#fff;
